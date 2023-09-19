@@ -9,10 +9,8 @@
                 >
                     <img width="270" class="h-auto w-[19%]" v-for="(item, index) in img_feddback" :key="index" :src="item" 
                         alt="Hình ảnh feedback"
-                        :style="spanIndex === 2 ? {'transform': 'translate(-100%, 0px)', 'transition': 'transform 0.3s'} : {'transform': 'translate(0%, 0px)', 'transition': 'transform 0.3s'}"
-                        
+                        :style="spanIndex === 2 ? {'transform': 'translate(-100%, 0px)', 'transition': 'transform 0.3s'} : {'transform': 'translate(0%, 0px)', 'transition': 'transform 0.3s'}"                     
                         >
-
                 </div>
             </div>
             <div class="mt-10">

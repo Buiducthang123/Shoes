@@ -15,6 +15,13 @@ class AuthController extends Controller
     //Đăng nhập ----------------------------------------------------
     function login(Request $request)
     {
+        $validate = $request->validate(
+        [
+            'email'=>"required|email",
+            'password'=>"required"
+        ]
+        );
+       
         $email = $request->email;
         $password = $request->password;
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
